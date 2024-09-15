@@ -1,5 +1,6 @@
 import {
   Image,
+  Keyboard,
   KeyboardAvoidingView,
   StyleSheet,
   Text,
@@ -9,12 +10,26 @@ import React, {useState} from 'react';
 import CustomeSaveAreaView from '../components/global/CustomeSafeAreaView';
 import CustomeInput from '../components/ui/CustomeInput';
 import CustomeButtom from '../components/ui/CustomeButtom';
+import { login } from '../service/authService';
+import { navigate, resetAndNavigate } from '../utils/NavigationUtils';
 
 const AuthScreen = () => {
   const [phone, setPhone] = useState('');
-  const [loading, isLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleAuth = async () => {};
+  const handleAuth = async () => {
+    // Keyboard.dismiss()
+    // setLoading(true)
+    // try {
+      const response = await login(phone)
+      console.log("response", response)
+      // resetAndNavigate('DashboardScreen')
+    // } catch (error) {
+    //   navigate('RegisterScreen', {phone: phone})
+    // } finally {
+    //   setLoading(false)
+    // }
+  };
 
   return (
     <KeyboardAvoidingView
