@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const App = () => {
+const CallerScreen = () => {
   return (
-    <View className='bg-red-600 flex-1'>
-      <Text>App</Text>
+    <View>
+      <Text>CallerScreen</Text>
     </View>
   )
 }
 
-export default App
+export default CallerScreen
 
 const styles = StyleSheet.create({})

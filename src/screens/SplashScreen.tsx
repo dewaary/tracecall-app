@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const App = () => {
+const SplashScreen = () => {
   return (
-    <View className='bg-red-600 flex-1'>
-      <Text>App</Text>
+    <View>
+      <Text>SplashScreen</Text>
     </View>
   )
 }
 
-export default App
+export default SplashScreen
 
 const styles = StyleSheet.create({})

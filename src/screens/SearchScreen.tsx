@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const App = () => {
+const SearchScreen = () => {
   return (
-    <View className='bg-red-600 flex-1'>
-      <Text>App</Text>
+    <View>
+      <Text>SearchScreen</Text>
     </View>
   )
 }
 
-export default App
+export default SearchScreen
 
 const styles = StyleSheet.create({})
